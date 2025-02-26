@@ -1,4 +1,3 @@
-/* General Reset */
 body {
   margin: 0;
   padding: 0;
@@ -13,7 +12,6 @@ body {
 .trashicon i:hover {
   transform: scale(1.2);
   color: white;
-  /* Change color on hover */
   background-color: #f44336;
   border-radius: 5px;
   padding: 5%;
@@ -24,14 +22,12 @@ body {
   cursor: pointer;
 }
 
-/* Fixed Navbar */
 .navbar {
   position: fixed;
   width: 100%;
   z-index: 5;
 }
 
-/* Sidebar Styling */
 .sidebar {
   width: 250px;
   height: 100vh;
@@ -46,7 +42,6 @@ body {
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Show Sidebar */
 .sidebar.show {
   left: 0;
 }
@@ -63,18 +58,15 @@ body {
   background-color: #495057;
 }
 
-/* Main Content */
 .main-content {
   padding: 80px 20px 20px;
   transition: margin-left 0.3s ease-in-out;
 }
 
-/* Sidebar Open - Adjust Content */
 .sidebar.show ~ .main-content {
   margin-left: 0;
 }
 
-/* Sidebar Toggle Button */
 .sidebar-toggle {
   font-size: 24px;
   cursor: pointer;
@@ -187,12 +179,12 @@ body {
 }
 
 .number {
-  border-radius: 50px;
-  padding: 1px;
+  border-radius: 14px;
+  padding: 2px;
 }
 
 .number:hover {
-  background-color: skyblue;
+  background-color: blueviolet;
   color: white;
 }
 

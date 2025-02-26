@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -90,14 +90,14 @@
                 <i class="bi bi-chevron-right ms-auto px-2"></i>
             </li>
             <li>
-                <div class="nav-link text-primary p-2 d-flex align-items-center   px-2 " data-bs-toggle="collapse"
+                <div class="nav-link p-2 d-flex align-items-center   px-2 " data-bs-toggle="collapse"
                     data-bs-target="#teamMenu">
                     <i class="bi bi-people me-1"></i> <span>Team Members</span>
                     <i class="bi bi-chevron-right ms-auto px-2"></i>
                 </div>
                 <div class="accordion-collapse " id="teamMenu">
                     <ul class="list ms-3">
-                        <li class="d-flex align-items-center nav-link text-primary px-1 py-2">
+                        <li class="d-flex align-items-center nav-link  px-1 py-2">
                             <i class="bi bi-people me-2"></i><span>Team Member</span>
                         </li>
                         <li class="d-flex align-items-center">
@@ -112,15 +112,15 @@
                 <i class="bi bi-folder me-2"></i> <span>Projects</span>
                 <i class="bi bi-chevron-right ms-auto px-2"></i>
             </li>
-            <li class="align-items-center justify-content-between px-2 py-3">
-                <i class="bi bi-people me-2"></i> <span> Clients</span>
-                <i class="bi bi-chevron-right ms-auto p-4  py-2"></i>
+            <li class="d-flex align-items-center justify-content-between px-2 py-3">
+                <i class="bi bi-people me-1"></i> <span>Clients</span>
+                <i class="bi bi-chevron-right ms-auto px-2"></i>
             </li>
             <li>
                 <div class="nav-link text-primary p-2 d-flex align-items-center px-2 " data-bs-toggle="collapse"
                     data-bs-target="#Menu">
-                    <i class="bi bi-mortarboard me-2"></i> <span>Learning Paths</span>
-                    <i class="bi bi-chevron-right ms-auto px-1"></i>
+                    <i class="bi bi-mortarboard me-1"></i> <span>Learning Paths</span>
+                    <i class="bi bi-chevron-down ms-auto px-1"></i>
                 </div>
                 <div class="accordion-collapse " id="Menu">
                     <ul class="list ms-3">
@@ -166,15 +166,14 @@
                 <!-- Profile & Form -->
                 <div class="row p-3">
                     <!-- Profile Image -->
-                    
-                        <div class="col-md-3 col-lg-2 text-center position-relative">
-                            <div class="profile">
-                                <img src="Assets/icons/learning.png" class="profile-img rounded-circle" alt="User" width="150" height="150">
-                                <i class="bi bi-camera camera-icon"></i>
-                                <p class="profile-name">Only jpg, png, jpeg files (max 1MB)</p>
-                            </div>
+                    <div class="col-md-3 col-lg-2 text-center position-relative">
+                        <div class="profile">
+                            <img src="Assets/icons/learning.png" class="profile-img rounded-circle" alt="User"
+                                width="150" height="150">
+                            <i class="bi bi-camera camera-icon"></i>
+                            <p class="profile-name">Only jpg, png, jpeg files (max 1MB)</p>
                         </div>
-               
+                    </div>
                     <div class="col-sm-12 col-md-12 col-lg-10">
                         <form>
                             <div class="row g-3">
@@ -184,12 +183,39 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <label class="form-label">Select Courses </label>
-                                    <select class="form-select">
-                                        <option>Select Courses</option>
-                                        <option>Web Development</option>
-                                        <option>UI Development</option>
-                                        <option>Power BI</option>
-                                    </select>
+                                    <div class="dropdown">
+                                        <button class="form-select text-start border" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Select Course
+                                        </button>
+                                        <ul class="dropdown-menu p-2 w-100">
+                                            <li>
+                                                <label class="dropdown-item d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input me-2">Web Development
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="dropdown-item d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input me-2">UI Development
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="dropdown-item d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input me-2">UX Development
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="dropdown-item d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input me-2">Database
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="dropdown-item d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input me-2">Power BI
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <label class="form-label">Description </label>
@@ -201,7 +227,7 @@
                 </div>
                 <h5 class="con">Courses Added</h5>
                 <div class="container  ">
-                    <div class="row fw-bold py-2 border-bottom">
+                    <div class="row fw-semibold py-2 border-bottom d-none d-sm-flex bg-dark-subtle">
                         <div class="col-3">Courses</div>
                         <div class="col-4">Skill Sets</div>
                         <div class="col-3">Description</div>
@@ -212,11 +238,12 @@
                             <img src="Assets/icons/web.png" class="rounded me-2" width="50" height="50">
                             <div>
                                 <strong>Web Development</strong>
-                                <div class="text-muted">Duration:<img src="Assets/icons/Time.svg" alt="" class="mb-1"> 80 Hrs
+                                <div class="text-muted">Duration:<img src="Assets/icons/Time.svg" alt="" class="mb-1">
+                                    80 Hrs
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4 mt-2 mt-md-0 d-flex flex-wrap">
+                        <div class="col-12 col-md-4 mt-2 mt-md-0 d-flex flex-wrap ">
                             <span class="skill-badge">HTML</span>
                             <span class="skill-badge">PYTHON</span>
                             <span class="skill-badge">CSS</span>
@@ -234,13 +261,14 @@
                             <i class="bi bi-trash3"></i>
                         </div>
                     </div>
-                    
+
                     <div class="row py-3 border-bottom align-items-center">
                         <div class="col-12 col-md-3 d-flex align-items-center">
                             <img src="Assets/icons/UI.png" class="rounded me-2" width="50" height="50">
                             <div>
                                 <strong>UI Development</strong>
-                                <div class="text-muted">Duration:<img src="Assets/icons/Time.svg" alt="" class="mb-1"> 85 Hrs
+                                <div class="text-muted">Duration:<img src="Assets/icons/Time.svg" alt="" class="mb-1">
+                                    85 Hrs
                                 </div>
                             </div>
                         </div>
@@ -266,7 +294,8 @@
                             <img src="Assets/icons/BI.png" class="rounded me-2" width="50" height="50">
                             <div>
                                 <strong>Power BI</strong>
-                                <div class="text-muted">Duration:<img src="Assets/icons/Time.svg" alt="" class="mb-1"> 65 Hrs
+                                <div class="text-muted">Duration:<img src="Assets/icons/Time.svg" alt="" class="mb-1">
+                                    65 Hrs
                                 </div>
                             </div>
                         </div>
@@ -313,8 +342,42 @@
                             <i class="bi bi-trash3"></i>
                         </div>
                     </div>
-                   
-                </div>                
+                    <div class="mt-5"></div>
+
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-end me-2">
+                            <li class="page-item disabled">
+                                <a class="page-link bg-transparent rounded-pill text-primary shadow-sm" href="#"
+                                    tabindex="-1" aria-disabled="true">
+                                    &laquo;
+                                </a>
+                            </li>
+
+                            <li class="page-item active">
+                                <a class="page-link rounded-pill border-0 bg-primary text-white shadow-sm "
+                                    href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link rounded-pill border-0 text-primary shadow-sm EM" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link rounded-pill border-0 text-primary shadow-sm" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link rounded-pill border-0 text-primary shadow-sm" href="#">....</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link rounded-pill border-0 text-primary shadow-sm" href="#">90</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link bg-transparent rounded-pill text-primary shadow-sm" href="#">
+                                    &raquo;
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
             </div>
         </div>
     </div>
@@ -322,24 +385,25 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-    const sidebar = document.getElementById("sidebar");
-    const sidebarToggle = document.getElementById("sidebarToggle");
-    const overlay = document.createElement("div");
+            const sidebar = document.getElementById("sidebar");
+            const sidebarToggle = document.getElementById("sidebarToggle");
+            const overlay = document.createElement("div");
 
-    overlay.className = "overlay";
-    document.body.appendChild(overlay);
+            overlay.className = "overlay";
+            document.body.appendChild(overlay);
 
-    sidebarToggle.addEventListener("click", function () {
-        sidebar.classList.toggle("show");
-        overlay.classList.toggle("active");
-    });
+            sidebarToggle.addEventListener("click", function () {
+                sidebar.classList.toggle("show");
+                overlay.classList.toggle("active");
+            });
 
-    overlay.addEventListener("click", function () {
-        sidebar.classList.remove("show");
-        overlay.classList.remove("active");
-    });
-});
+            overlay.addEventListener("click", function () {
+                sidebar.classList.remove("show");
+                overlay.classList.remove("active");
+            });
+        });
 
     </script>
 </body>
+
 </html>
